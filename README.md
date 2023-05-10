@@ -1,42 +1,40 @@
-# Nuxt 3 Minimal Starter
+# Inkline :heart: Nuxt
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Followed [this guide](https://next.inkline.io/docs/installation/nuxt)
 
-## Setup
+## Getting here
+1. Setup nuxt:
 
-Make sure to install the dependencies:
+    ```sh
+    npx nuxi init .
+    ```
 
-```bash
-# yarn
-yarn install
+1.  install inkline
+    ```sh
+    npx inkline init
+    ```
 
-# npm
-npm install
+1. Copy in inkline config
 
-# pnpm
-pnpm install
-```
+    Reference (found [here](https://next.inkline.io/docs/configuration/nuxt))
 
-## Development Server
+1. Update `inkline.config.ts`
 
-Start the development server on `http://localhost:3000`
+    added new `fontFamily`: `tertiary`
 
-```bash
-npm run dev
-```
 
-## Production
+## How do I get `.inkline/*` to update???
 
-Build the application for production:
+### Tried:
 
-```bash
-npm run build
-```
+#### Method 1:
 
-Locally preview production build:
+delete`.inkline/*`, rerun `npm install`
 
-```bash
-npm run preview
-```
+This regenerates `.inkline/*`, but not with the new `tertiary` fontFamily
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+#### Method 2:
+
+run `npx inkline generate scss`
+
+this regenerates `.inkline/*` with config from `inkline.config.ts`, however I don't think config in `nuxt.config.ts` is respected
