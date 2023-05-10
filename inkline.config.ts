@@ -80,6 +80,11 @@ export default defineConfig({
                         base: 'var(--font-family-primary-base)',
                         monospace: 'var(--font-family-primary-monospace)',
                         print: 'var(--font-family-primary-print)'
+                    },
+                    tertiary: {
+                        base: 'var(--font-family-primary-base)',
+                        monospace: 'var(--font-family-primary-monospace)',
+                        print: 'var(--font-family-primary-print)'
                     }
                 },
                 fontWeight: {
